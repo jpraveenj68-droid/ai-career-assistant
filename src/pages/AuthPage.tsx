@@ -77,7 +77,7 @@ export const AuthPage: React.FC = () => {
           </h2>
           <p className="text-xs text-slate-400 mt-1">
             {isRegister
-              ? 'Join the AI Career Assistant Command Center'
+              ? 'Join the Mike Career Assistant Command Center'
               : 'Sign in to access your personalized career roadmaps'}
           </p>
         </div>

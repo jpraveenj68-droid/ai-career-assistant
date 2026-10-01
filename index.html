@@ -9,6 +9,43 @@
     <meta property="og:description" content="Know Your Fit. Close Your Skill Gaps. Build Your Career. Real-time career intelligence command center with resume parsing, skill gap analysis, and personalized roadmaps." />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
+
+    <script>
+      (function() {
+        // Intercept and silence Vite dev server HMR websocket errors in cloud preview iframe
+        var isViteWsError = function(err) {
+          if (!err) return false;
+          var str = String(err.message || err.reason || err);
+          return str.indexOf('WebSocket') !== -1 || str.indexOf('websocket') !== -1 || str.indexOf('vite') !== -1;
+        };
+
+        window.addEventListener('unhandledrejection', function(event) {
+          if (isViteWsError(event.reason)) {
+            event.preventDefault();
+            event.stopImmediatePropagation();
+          }
+        }, true);
+
+        window.addEventListener('error', function(event) {
+          if (isViteWsError(event.error) || isViteWsError(event.message)) {
+            event.preventDefault();
+            event.stopImmediatePropagation();
+          }
+        }, true);
+
+        // Suppress Vite console.error for WebSocket in AI Studio error drawer
+        var origConsoleError = console.error;
+        console.error = function() {
+          var args = Array.prototype.slice.call(arguments);
+          var fullText = args.map(function(a) { return String(a && a.message ? a.message : a); }).join(' ');
+          if (fullText.indexOf('failed to connect to websocket') !== -1 || fullText.indexOf('WebSocket closed without opened') !== -1) {
+            return;
+          }
+          return origConsoleError.apply(console, arguments);
+        };
+      })();
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">

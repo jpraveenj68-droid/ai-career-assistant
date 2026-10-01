@@ -1,7 +1,7 @@
-import { Router, Request, Response } from 'express';
+import { Router, type Request, type Response } from 'express';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
-import { db, User } from '../db';
+import { db, type User } from '../db.ts';
 
 export const authRouter = Router();
 

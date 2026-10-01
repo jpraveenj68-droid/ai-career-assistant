@@ -15,6 +15,8 @@ interface AuthContextType {
   aiProvider: string;
   voiceAssistantOpen: boolean;
   setVoiceAssistantOpen: (open: boolean) => void;
+  subramaniBotEnabled: boolean;
+  setSubramaniBotEnabled: (enabled: boolean) => void;
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
@@ -25,6 +27,20 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const [activeAnalysis, setActiveAnalysis] = useState<AnalysisRecord | null>(null);
   const [aiProvider, setAiProvider] = useState<string>('Local NLP Engine');
   const [voiceAssistantOpen, setVoiceAssistantOpen] = useState<boolean>(false);
+  const [subramaniBotEnabled, setSubramaniBotEnabledState] = useState<boolean>(() => {
+    if (typeof window !== 'undefined') {
+      const stored = localStorage.getItem('subramani_bot_enabled');
+      return stored !== null ? stored === 'true' : true;
+    }
+    return true;
+  });
+
+  const setSubramaniBotEnabled = (enabled: boolean) => {
+    setSubramaniBotEnabledState(enabled);
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('subramani_bot_enabled', String(enabled));
+    }
+  };
 
   const refreshUser = async () => {
     try {
@@ -94,6 +110,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         aiProvider,
         voiceAssistantOpen,
         setVoiceAssistantOpen,
+        subramaniBotEnabled,
+        setSubramaniBotEnabled,
       }}
     >
       {children}

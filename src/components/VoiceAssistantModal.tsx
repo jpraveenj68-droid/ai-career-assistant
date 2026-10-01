@@ -62,7 +62,7 @@ export const VoiceAssistantModal: React.FC<{ isOpen: boolean; onClose: () => voi
     {
       id: 'welcome',
       sender: 'assistant',
-      text: 'Hello! I am your AI Voice Career Coach powered by Gemini 3.5 Multilingual Voice. Tap the microphone and speak in English, Tamil (தமிழ்), Hindi (हिंदी), or any language!',
+      text: 'வணக்கம்! நான் சுப்பிரமணி (Subramani), உங்கள் AI Voice Career Coach powered by Gemini 3.5 Multilingual Live Intelligence! Tap the microphone and speak with me in Tamil (தமிழ்), English, Hindi, or any language!',
       timestamp: 'Just now',
     },
   ]);
@@ -393,6 +393,9 @@ export const VoiceAssistantModal: React.FC<{ isOpen: boolean; onClose: () => voi
         text: payload.text,
         language: selectedLanguage,
         voice: selectedVoice,
+        context: {
+          customPersona: 'You are Subramani (சுப்பிரமணி), an encouraging, smart, and friendly AI Career Voice Coach in Mike Career Assistant. You give concise, helpful career, resume, and interview guidance warmly in Tamil, conversational Tanglish, or English.',
+        },
       });
 
       // If text wasn't shown yet (because it came from audio transcribe), add it now
@@ -459,18 +462,19 @@ export const VoiceAssistantModal: React.FC<{ isOpen: boolean; onClose: () => voi
         {/* Modal Header */}
         <div className="flex items-center justify-between p-4 border-b border-slate-800/80 bg-slate-900/60 backdrop-blur-md z-10">
           <div className="flex items-center gap-2.5">
-            <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center text-white shadow-md shadow-cyan-500/20">
-              <Radio className="w-4 h-4 animate-pulse" />
+            <div className="relative w-9 h-9 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center text-white shadow-md shadow-cyan-500/20 shrink-0">
+              <span className="w-1.5 h-1.5 rounded-full bg-cyan-300 animate-ping absolute -top-1" />
+              <Bot className="w-5 h-5 text-white" />
             </div>
             <div>
               <h3 className="text-sm font-bold text-white flex items-center gap-1.5">
-                <span>Gemini 3.5 Multilingual Voice Assistant</span>
-                <span className="text-[10px] font-mono px-2 py-0.2 rounded bg-cyan-500/20 text-cyan-300 border border-cyan-500/40">
-                  LIVE AUDIO
+                <span>Subramani (சுப்பிரமணி) • Voice Coach</span>
+                <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-cyan-500/20 text-cyan-300 border border-cyan-500/40">
+                  GEMINI 3.5 LIVE
                 </span>
               </h3>
               <p className="text-[10px] text-slate-400 font-mono">
-                Conversational career guidance in Tamil, Hindi, English, & 5+ languages
+                Your AI Career Buddy • Tamil, English, Hindi, & Multilingual Voice
               </p>
             </div>
           </div>
@@ -571,8 +575,12 @@ export const VoiceAssistantModal: React.FC<{ isOpen: boolean; onClose: () => voi
                 className={`flex gap-3 text-xs ${isAsst ? 'justify-start' : 'justify-end'}`}
               >
                 {isAsst && (
-                  <div className="w-7 h-7 rounded-lg bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 shrink-0">
-                    <Bot className="w-4 h-4" />
+                  <div className="w-8 h-8 rounded-xl bg-slate-900 border border-cyan-500/40 flex flex-col items-center justify-center shrink-0 shadow-sm shadow-cyan-500/10 relative overflow-hidden" title="Subramani">
+                    <span className="w-1.5 h-0.5 bg-cyan-400 rounded-full mb-0.5 animate-pulse" />
+                    <div className="flex gap-1 items-center">
+                      <span className="w-1 h-1 rounded-full bg-cyan-300 shadow-[0_0_4px_rgba(6,182,212,1)]" />
+                      <span className="w-1 h-1 rounded-full bg-cyan-300 shadow-[0_0_4px_rgba(6,182,212,1)]" />
+                    </div>
                   </div>
                 )}
 

@@ -1,7 +1,7 @@
-import { Router, Response } from 'express';
+import { Router, type Response } from 'express';
 import { GoogleGenAI } from '@google/genai';
-import { AuthenticatedRequest, optionalAuth } from './auth';
-import { db } from '../db';
+import { type AuthenticatedRequest, optionalAuth } from './auth.ts';
+import { db } from '../db.ts';
 
 export const voiceRouter = Router();
 
@@ -136,16 +136,16 @@ function generateLocalCareerGuidance(userQuery: string, language: string, contex
   return `Your current alignment for ${context.targetRole} is ${context.score}%. Closing gaps in ${gapsStr} with practical portfolio projects is your fastest path to interviews!`;
 }
 
-// POST /api/voice/interact (Multi-language Voice Assistant Pipeline)
-voiceRouter.post('/interact', optionalAuth, async (req: AuthenticatedRequest, res: Response) => {
+// POST /api/voice/interact and /api/voice/chat (Multi-language Voice Assistant Pipeline)
+voiceRouter.post(['/interact', '/chat'], optionalAuth, async (req: AuthenticatedRequest, res: Response) => {
   try {
     const userId = req.user ? req.user.id : 'demo-user-1';
     const resume = db.getResume(userId);
     const analysis = db.getLatestAnalysis(userId) || db.getAnalysis('demo-analysis-1');
 
-    const { audio, mimeType, text, language = 'en', voice = 'Kore' } = req.body;
+    const { audio, mimeType, text, userQuery: bodyQuery, language = 'en', voice = 'Kore', context } = req.body;
 
-    let userQuery = (text || '').trim();
+    let userQuery = (text || bodyQuery || '').trim();
 
     // If audio is provided, transcribe with Gemini 3.5 Transcribe
     if (audio && audio.length > 50) {
@@ -206,8 +206,9 @@ Featured Project: ${analysis?.recommendedProjects[0]?.title || 'Real-Time Job Tr
     };
 
     const langInstruction = languageInstructionMap[language] || languageInstructionMap['en'];
+    const persona = context?.customPersona || 'You are the interactive AI Career Voice Coach inside the "Mike Career Assistant Command Center".';
 
-    const prompt = `You are the interactive AI Career Voice Coach inside the "AI Career Assistant Command Center".
+    const prompt = `${persona}
 ${langInstruction}
 Keep your answer concise (2-3 sentences max so it sounds natural and fast when spoken aloud over audio), motivating, and directly relevant to their resume and target role.
 

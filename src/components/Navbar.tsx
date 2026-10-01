@@ -1,10 +1,10 @@
 import React from 'react';
 import { useAuth } from '../context/AuthContext';
-import { Cpu, User, LogOut, Sparkles, ChevronRight, Zap, Mic, Radio } from 'lucide-react';
+import { Cpu, User, LogOut, Sparkles, ChevronRight, Zap, AudioLines, Radio } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 export const Navbar: React.FC = () => {
-  const { user, logout, demoLogin, aiProvider, setVoiceAssistantOpen } = useAuth();
+  const { user, logout, demoLogin, aiProvider, setVoiceAssistantOpen, subramaniBotEnabled, setSubramaniBotEnabled } = useAuth();
   const navigate = useNavigate();
 
   return (
@@ -20,7 +20,7 @@ export const Navbar: React.FC = () => {
           </div>
           <div className="hidden sm:block">
             <h1 className="text-sm font-bold tracking-tight text-white flex items-center gap-1.5">
-              AI Career Assistant
+              Mike Career Assistant
             </h1>
             <p className="text-[10px] text-slate-400 font-mono leading-none">
               Command Center v2.4
@@ -37,15 +37,45 @@ export const Navbar: React.FC = () => {
       </div>
 
       {/* Right side controls */}
-      <div className="flex items-center gap-3">
+      <div className="flex items-center gap-2 sm:gap-3">
+        {/* Subramani Bot ON / OFF Toggle Button */}
+        <button
+          type="button"
+          onClick={() => setSubramaniBotEnabled(!subramaniBotEnabled)}
+          className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl border text-xs font-semibold transition-all hover:scale-105 ${
+            subramaniBotEnabled
+              ? 'bg-cyan-500/15 border-cyan-500/40 text-cyan-300 shadow-[0_0_12px_rgba(6,182,212,0.25)]'
+              : 'bg-slate-900 border-slate-800 text-slate-400 hover:text-slate-200'
+          }`}
+          title={subramaniBotEnabled ? 'Click to turn Subramani OFF' : 'Click to turn Subramani ON'}
+        >
+          <span className="text-sm leading-none">🤖</span>
+          <span className="hidden md:inline">Subramani:</span>
+          <span
+            className={`text-[10px] font-mono font-bold px-1.5 py-0.5 rounded-full ${
+              subramaniBotEnabled
+                ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40'
+                : 'bg-slate-800 text-slate-400 border border-slate-700'
+            }`}
+          >
+            {subramaniBotEnabled ? 'ON' : 'OFF'}
+          </span>
+          <span
+            className={`w-2 h-2 rounded-full ${
+              subramaniBotEnabled ? 'bg-emerald-400 animate-pulse' : 'bg-slate-600'
+            }`}
+          />
+        </button>
+
         {/* Voice Assistant Trigger Button */}
         <button
           type="button"
           onClick={() => setVoiceAssistantOpen(true)}
-          className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-cyan-500/10 hover:bg-cyan-500/20 border border-cyan-500/40 text-cyan-300 text-xs font-semibold shadow-sm transition-all"
+          className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-cyan-500/10 hover:bg-cyan-500/20 border border-cyan-500/40 text-cyan-300 text-xs font-semibold shadow-sm hover:scale-105 transition-all"
         >
-          <Mic className="w-3.5 h-3.5 text-cyan-400 animate-pulse" />
+          <AudioLines className="w-3.5 h-3.5 text-cyan-400 animate-pulse" />
           <span className="hidden sm:inline">Voice Coach</span>
+          <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
         </button>
 
         {/* AI Provider Status Pill */}

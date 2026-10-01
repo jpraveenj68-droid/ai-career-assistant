@@ -208,6 +208,7 @@ export const api = {
     text?: string;
     language?: string;
     voice?: string;
+    context?: any;
   }) =>
     request<{
       userTranscript: string;

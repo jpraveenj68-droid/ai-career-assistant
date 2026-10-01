@@ -1,10 +1,10 @@
-import { Router, Response } from 'express';
+import { Router, type Response } from 'express';
 import multer from 'multer';
 import mammoth from 'mammoth';
-import { db, ExtractedResume } from '../db';
-import { AuthenticatedRequest, requireAuth, optionalAuth } from './auth';
-import { parseResumeWithAI, parseResumeFromImageWithAI } from '../ai';
-import { parseResumeText } from '../nlp';
+import { db, type ExtractedResume } from '../db.ts';
+import { type AuthenticatedRequest, requireAuth, optionalAuth } from './auth.ts';
+import { parseResumeWithAI, parseResumeFromImageWithAI } from '../ai.ts';
+import { parseResumeText } from '../nlp.ts';
 
 export const resumeRouter = Router();
 

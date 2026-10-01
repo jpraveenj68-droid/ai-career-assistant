@@ -2,13 +2,13 @@ import express from 'express';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
-import { authRouter } from './server/routes/auth';
-import { resumeRouter } from './server/routes/resume';
-import { jobRouter } from './server/routes/job';
-import { analysisRouter } from './server/routes/analysis';
-import { interactiveRouter } from './server/routes/interactive';
-import { voiceRouter } from './server/routes/voice';
-import { isAIAvailable } from './server/ai';
+import { authRouter } from './server/routes/auth.ts';
+import { resumeRouter } from './server/routes/resume.ts';
+import { jobRouter } from './server/routes/job.ts';
+import { analysisRouter } from './server/routes/analysis.ts';
+import { interactiveRouter } from './server/routes/interactive.ts';
+import { voiceRouter } from './server/routes/voice.ts';
+import { isAIAvailable } from './server/ai.ts';
 
 dotenv.config();
 

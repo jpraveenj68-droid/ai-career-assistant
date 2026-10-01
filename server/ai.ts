@@ -5,8 +5,8 @@
  */
 
 import { GoogleGenAI } from '@google/genai';
-import { ExtractedResume, JobDescription } from './db';
-import { executeDeterministicMatch, parseResumeText, parseJobDescriptionText } from './nlp';
+import type { ExtractedResume, JobDescription } from './db.ts';
+import { executeDeterministicMatch, parseResumeText, parseJobDescriptionText } from './nlp.ts';
 
 // Check if Gemini API key exists
 const apiKey = process.env.GEMINI_API_KEY;

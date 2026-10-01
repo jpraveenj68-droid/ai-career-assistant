@@ -5,7 +5,7 @@
  * and Weighted Alignment Scoring.
  */
 
-import { ExtractedResume, JobDescription, SkillGapItem, RoadmapTask, RecommendedProject, RecommendedCertification, InterviewQuestion } from './db';
+import type { ExtractedResume, JobDescription, SkillGapItem, RoadmapTask, RecommendedProject, RecommendedCertification, InterviewQuestion } from './db.ts';
 
 // Skill Alias Map: normalizes informal or shorthand technical terms to canonical forms
 export const SKILL_ALIASES: Record<string, string> = {

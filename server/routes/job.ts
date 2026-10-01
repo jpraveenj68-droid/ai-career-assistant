@@ -1,8 +1,8 @@
-import { Router, Response } from 'express';
+import { Router, type Response } from 'express';
 import multer from 'multer';
-import { db } from '../db';
-import { AuthenticatedRequest, optionalAuth } from './auth';
-import { parseJobWithAI, parseJobFromImageWithAI } from '../ai';
+import { db } from '../db.ts';
+import { type AuthenticatedRequest, optionalAuth } from './auth.ts';
+import { parseJobWithAI, parseJobFromImageWithAI } from '../ai.ts';
 
 export const jobRouter = Router();
 

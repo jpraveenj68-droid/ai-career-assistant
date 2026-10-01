@@ -1,6 +1,6 @@
-import { Router, Response } from 'express';
-import { db } from '../db';
-import { AuthenticatedRequest, optionalAuth } from './auth';
+import { Router, type Response } from 'express';
+import { db } from '../db.ts';
+import { type AuthenticatedRequest, optionalAuth } from './auth.ts';
 
 export const interactiveRouter = Router();
 

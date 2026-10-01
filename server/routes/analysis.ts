@@ -1,7 +1,7 @@
-import { Router, Response } from 'express';
-import { db, AnalysisRecord, ExtractedResume, JobDescription } from '../db';
-import { AuthenticatedRequest, optionalAuth, requireAuth } from './auth';
-import { runComprehensiveAnalysis } from '../ai';
+import { Router, type Response } from 'express';
+import { db, type AnalysisRecord, type ExtractedResume, type JobDescription } from '../db.ts';
+import { type AuthenticatedRequest, optionalAuth, requireAuth } from './auth.ts';
+import { runComprehensiveAnalysis } from '../ai.ts';
 
 export const analysisRouter = Router();
 

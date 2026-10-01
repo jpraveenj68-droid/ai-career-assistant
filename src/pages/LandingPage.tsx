@@ -48,7 +48,7 @@ export const LandingPage: React.FC = () => {
           </div>
           <div>
             <span className="font-bold text-base tracking-tight text-white block">
-              AI Career Assistant
+              Mike Career Assistant
             </span>
             <span className="text-[10px] text-cyan-400 font-mono tracking-wider uppercase">
               Career Intelligence Engine
@@ -162,7 +162,7 @@ export const LandingPage: React.FC = () => {
             From Raw Application to Target Job Placement
           </h2>
           <p className="text-sm text-slate-400 mt-2">
-            Most portals simply show job openings. AI Career Assistant gives you the systematic path to qualify for them.
+            Most portals simply show job openings. Mike Career Assistant gives you the systematic path to qualify for them.
           </p>
         </div>
 
@@ -284,7 +284,7 @@ export const LandingPage: React.FC = () => {
 
       {/* FOOTER */}
       <footer className="border-t border-slate-900 bg-slate-950/80 py-8 px-6 text-center text-xs text-slate-500">
-        <p>AI Career Assistant • “Know Your Fit. Close Your Skill Gaps. Build Your Career.”</p>
+        <p>Mike Career Assistant • “Know Your Fit. Close Your Skill Gaps. Build Your Career.”</p>
         <p className="mt-1 font-mono text-[11px] text-slate-600">Built for production-grade career development intelligence.</p>
       </footer>
     </div>

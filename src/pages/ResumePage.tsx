@@ -49,8 +49,9 @@ export const ResumePage: React.FC = () => {
       setLoading(true);
       const res = await api.getResume();
       setResume(res.resume);
-    } catch (err) {
-      console.warn('No saved resume found:', err);
+    } catch {
+      // Empty resume state on initial visit is normal; silently set to null
+      setResume(null);
     } finally {
       setLoading(false);
     }
