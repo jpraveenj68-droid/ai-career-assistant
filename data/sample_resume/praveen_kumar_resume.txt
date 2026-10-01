@@ -1,0 +1,51 @@
+PRAVEEN KUMAR
+Chennai, India | +91 98765 43210 | demo@careerassistant.ai | linkedin.com/in/praveenkumar-ai
+
+OBJECTIVE
+Aspiring Full Stack Engineer and AI & Data Science undergraduate passionate about building resilient distributed systems, modern web user interfaces, and predictive machine learning backend services.
+
+EDUCATION
+Anna University College of Engineering
+B.Tech in Artificial Intelligence & Data Science | CGPA: 8.85 / 10 | 2022 - 2026
+
+TECHNICAL SKILLS
+- Programming Languages: Python, Java, JavaScript, SQL
+- Frontend: React, Tailwind CSS, HTML5/CSS3, Vite
+- Backend & APIs: FastAPI, REST API, Express fundamentals
+- Databases: SQL, SQLite, PostgreSQL (foundations)
+- Version Control & Tools: Git, GitHub, Postman, Linux, VS Code
+- Concepts: Machine Learning, Scikit-Learn, Predictive Modeling, Data Structures & Algorithms
+
+KEY PROJECTS
+1. AI Blood Demand & Availability Prediction System
+   - Engineered an end-to-end forecasting pipeline utilizing Random Forest algorithms achieving 92% validation accuracy.
+   - Built an asynchronous Python FastAPI backend serving live inference endpoints with sub-80ms response times.
+   - Designed a responsive React dashboard for hospital blood bank logistics coordinators.
+   Tech Stack: Python, Machine Learning, FastAPI, React, SQL
+
+2. PulseVote Live Polling & Sentiment Analytics
+   - Developed a real-time audience voting application handling concurrent participant rooms.
+   - Implemented dynamic data charts and real-time state broadcasts.
+   Tech Stack: React, JavaScript, FastAPI, Tailwind CSS
+
+3. SplitSphere Expense Splitting & Debt Simplification
+   - Created a smart ledger application implementing graph debt simplification algorithms to minimize transaction hops.
+   - Structured relational schemas for transaction history and balance calculations.
+   Tech Stack: React, Python, SQL, REST API
+
+PROFESSIONAL EXPERIENCE
+Apex Code Labs - Full Stack Engineering Intern
+May 2025 - July 2025
+- Contributed to client-facing web portals built with React and Tailwind CSS.
+- Developed 12+ REST endpoints using Python FastAPI for ingestion of telemetry datasets.
+- Collaborated in an agile scrum team using Git for continuous branch reviews and PR workflows.
+
+CERTIFICATIONS
+- Foundations of Machine Learning - Coursera / DeepLearning.AI
+- Java SE Programming Certification - Oracle
+- Google Cloud Computing Fundamentals - Google Cloud Skills Boost
+
+SOFT SKILLS & ACTIVITIES
+- Strong analytical problem solving and debugging methodology
+- Collaborative team player with excellent technical communication
+- Active open-source contributor and hackathon participant

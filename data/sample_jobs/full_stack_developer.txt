@@ -1,0 +1,34 @@
+Role: Full Stack Developer
+Company: NextGen Scale Dynamics
+Location: Bangalore / Hybrid / Remote
+Experience: 1-3 years
+
+About the Role:
+NextGen Scale Dynamics is looking for a driven Full Stack Developer to build our next-generation cloud collaboration platform. You will work closely with product managers and distributed infrastructure engineers to craft fluid frontend experiences and high-throughput backend services.
+
+Key Responsibilities:
+- Design and implement responsive, high-performance web applications using React and TypeScript.
+- Architect robust RESTful microservices and backend APIs in Node.js.
+- Build transactional data models and perform query optimization on PostgreSQL databases.
+- Containerize application workloads using Docker and participate in CI/CD pipeline deployments.
+- Collaborate in an agile sprint environment with automated code reviews and end-to-end testing.
+
+Required Technical Skills:
+- React (Hooks, Context, State Management)
+- TypeScript (Strict types, Generics, Interfaces)
+- Node.js & Express
+- PostgreSQL (Schema design, Indexing, Joins)
+- REST API Design & Integration
+- Git & GitHub Version Control
+- Docker Containerization
+
+Preferred / Nice-to-Have Skills:
+- Cloud Platforms (AWS or Google Cloud)
+- In-memory Caching with Redis
+- Modern CSS (Tailwind CSS)
+- CI/CD Automation (GitHub Actions)
+- GraphQL experience
+
+Education & Qualifications:
+- Bachelor's degree in Computer Science, Artificial Intelligence, Information Technology, or equivalent practical experience.
+- Strong grounding in Computer Science fundamentals (Data Structures, Algorithms, System Design).

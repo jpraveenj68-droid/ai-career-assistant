@@ -1,0 +1,21 @@
+Role: Cloud Backend Engineer
+Company: CloudMesh Distributed Systems
+Location: Remote
+Experience: 2+ years
+
+About the Role:
+CloudMesh is building distributed cloud automation tools. We are seeking a Cloud Backend Engineer to take ownership of our API services and cloud database pipelines.
+
+Required Skills:
+- Python or Go
+- PostgreSQL & Redis
+- Docker & Kubernetes
+- AWS or Google Cloud
+- REST API & gRPC
+- Linux Systems & Git
+
+Preferred Skills:
+- Terraform (Infrastructure as Code)
+- CI/CD Pipelines
+- Kafka or RabbitMQ
+- Microservices Observability

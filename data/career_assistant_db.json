@@ -1,0 +1,499 @@
+{
+  "users": {
+    "demo-user-1": {
+      "id": "demo-user-1",
+      "name": "Praveen Kumar",
+      "email": "demo@careerassistant.ai",
+      "passwordHash": "$2a$10$demoHashedPasswordFallbackOnlySample123",
+      "education": "B.Tech in Artificial Intelligence & Data Science",
+      "graduationYear": "2026",
+      "preferredRole": "Full Stack Developer",
+      "createdAt": "2026-10-01T06:12:06.164Z"
+    }
+  },
+  "resumes": {
+    "demo-user-1": {
+      "name": "Candidate",
+      "email": "",
+      "phone": "",
+      "education": "Undergraduate Degree",
+      "degree": "Bachelor's Degree",
+      "skills": [
+        "Python",
+        "SQL",
+        "Git",
+        "JavaScript"
+      ],
+      "programmingLanguages": [],
+      "frameworks": [],
+      "databases": [],
+      "cloudSkills": [],
+      "tools": [],
+      "softSkills": [],
+      "projects": [],
+      "certifications": [],
+      "experience": [],
+      "rawText": "Extracted from Resume Photo",
+      "updatedAt": "2026-10-01T06:20:27.585Z"
+    }
+  },
+  "jobs": {
+    "demo-job-1": {
+      "id": "demo-job-1",
+      "title": "Full Stack Developer",
+      "company": "NextGen Scale Dynamics",
+      "requiredSkills": [
+        "React",
+        "TypeScript",
+        "Node.js",
+        "PostgreSQL",
+        "REST API",
+        "Git",
+        "Docker"
+      ],
+      "preferredSkills": [
+        "AWS",
+        "Redis",
+        "Tailwind CSS",
+        "CI/CD",
+        "GraphQL"
+      ],
+      "programmingLanguages": [
+        "TypeScript",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "React",
+        "Node.js",
+        "Express"
+      ],
+      "databases": [
+        "PostgreSQL",
+        "Redis"
+      ],
+      "cloudTechnologies": [
+        "Docker",
+        "AWS"
+      ],
+      "tools": [
+        "Git",
+        "Docker",
+        "Postman"
+      ],
+      "softSkills": [
+        "Team Collaboration",
+        "Problem Solving",
+        "Agile Mindset"
+      ],
+      "experienceRequired": "1-3 years of modern web development",
+      "education": "Bachelor's degree in Computer Science, AI, or related field",
+      "responsibilities": [
+        "Architect and build resilient web applications with React frontend and Node.js microservices",
+        "Design relational schemas and optimize complex SQL queries in PostgreSQL",
+        "Containerize services using Docker and collaborate in continuous deployment pipelines",
+        "Integrate third-party REST APIs and enforce strict TypeScript type safety"
+      ],
+      "rawText": "Role: Full Stack Developer\nCompany: NextGen Scale Dynamics\nRequired: React, TypeScript, Node.js, PostgreSQL, REST API, Git, Docker\nPreferred: AWS, Redis, Tailwind CSS, CI/CD\nWe are seeking a high-caliber Full Stack Developer to engineer mission-critical cloud products.\nRequirements: Strong proficiency in React, TypeScript, Node.js, and relational databases like PostgreSQL. Experience with Docker containerization and modern API design.",
+      "createdAt": "2026-10-01T06:12:06.164Z"
+    }
+  },
+  "analyses": {
+    "demo-analysis-1": {
+      "id": "demo-analysis-1",
+      "userId": "demo-user-1",
+      "targetRole": "Full Stack Developer",
+      "jobTitle": "Full Stack Developer at NextGen Scale Dynamics",
+      "createdAt": "2026-10-01T06:12:06.164Z",
+      "alignmentScore": 82,
+      "breakdown": {
+        "technicalSkills": 78,
+        "projects": 88,
+        "experience": 75,
+        "education": 92,
+        "certifications": 80,
+        "softSkills": 85
+      },
+      "matchedSkills": [
+        "React",
+        "Git",
+        "REST API",
+        "JavaScript",
+        "HTML/CSS",
+        "Tailwind CSS",
+        "SQL"
+      ],
+      "missingCriticalSkills": [
+        "TypeScript",
+        "Node.js",
+        "PostgreSQL",
+        "Docker"
+      ],
+      "missingPreferredSkills": [
+        "AWS",
+        "Redis",
+        "CI/CD"
+      ],
+      "partialSkills": [
+        {
+          "resumeSkill": "SQL (SQLite)",
+          "jobSkill": "PostgreSQL",
+          "reason": "Strong SQL foundational knowledge readily bridges to PostgreSQL with minor dialect syntax learning."
+        },
+        {
+          "resumeSkill": "JavaScript",
+          "jobSkill": "TypeScript",
+          "reason": "Solid JavaScript fluency accelerates TypeScript static typing adoption."
+        }
+      ],
+      "skillGaps": [
+        {
+          "id": "gap-1",
+          "skill": "TypeScript",
+          "category": "critical",
+          "currentLevel": "Beginner",
+          "requiredLevel": "Intermediate",
+          "gap": "Medium",
+          "importance": "High",
+          "suggestedLearningDays": 7
+        },
+        {
+          "id": "gap-2",
+          "skill": "Node.js",
+          "category": "critical",
+          "currentLevel": "Beginner",
+          "requiredLevel": "Intermediate",
+          "gap": "Medium",
+          "importance": "High",
+          "suggestedLearningDays": 8
+        },
+        {
+          "id": "gap-3",
+          "skill": "PostgreSQL",
+          "category": "critical",
+          "currentLevel": "Beginner",
+          "requiredLevel": "Intermediate",
+          "gap": "Low",
+          "importance": "High",
+          "suggestedLearningDays": 5
+        },
+        {
+          "id": "gap-4",
+          "skill": "Docker",
+          "category": "critical",
+          "currentLevel": "None",
+          "requiredLevel": "Intermediate",
+          "gap": "High",
+          "importance": "High",
+          "suggestedLearningDays": 6
+        },
+        {
+          "id": "gap-5",
+          "skill": "AWS",
+          "category": "nice-to-have",
+          "currentLevel": "Beginner",
+          "requiredLevel": "Intermediate",
+          "gap": "Medium",
+          "importance": "Medium",
+          "suggestedLearningDays": 10
+        },
+        {
+          "id": "gap-6",
+          "skill": "Redis",
+          "category": "nice-to-have",
+          "currentLevel": "None",
+          "requiredLevel": "Beginner",
+          "gap": "Medium",
+          "importance": "Low",
+          "suggestedLearningDays": 4
+        },
+        {
+          "id": "gap-7",
+          "skill": "React",
+          "category": "strength",
+          "currentLevel": "Advanced",
+          "requiredLevel": "Intermediate",
+          "gap": "None",
+          "importance": "High",
+          "suggestedLearningDays": 0
+        },
+        {
+          "id": "gap-8",
+          "skill": "Git",
+          "category": "strength",
+          "currentLevel": "Intermediate",
+          "requiredLevel": "Intermediate",
+          "gap": "None",
+          "importance": "High",
+          "suggestedLearningDays": 0
+        },
+        {
+          "id": "gap-9",
+          "skill": "REST API",
+          "category": "strength",
+          "currentLevel": "Intermediate",
+          "requiredLevel": "Intermediate",
+          "gap": "None",
+          "importance": "High",
+          "suggestedLearningDays": 0
+        }
+      ],
+      "roadmap": [
+        {
+          "id": "task-1",
+          "week": 1,
+          "skill": "TypeScript Fundamentals & Typing",
+          "title": "Type Safety & Modern TS with React",
+          "learningObjective": "Master TypeScript interfaces, generics, utility types, and convert React JavaScript components to robust typed components.",
+          "duration": "7 Days (10 hrs)",
+          "difficulty": "Intermediate",
+          "practiceTask": "Refactor PulseVote polling state models into strictly typed interfaces with union action types.",
+          "miniProject": "Typed Kanban Task Engine with generic CRUD handlers",
+          "completed": true,
+          "completedAt": "2026-09-26T06:12:06.164Z"
+        },
+        {
+          "id": "task-2",
+          "week": 2,
+          "skill": "Node.js & Express Backend Architecture",
+          "title": "Backend Services, Middleware & JWT Auth",
+          "learningObjective": "Build production Node.js services with Express, custom error middleware, input validation, and secure JWT authentication.",
+          "duration": "8 Days (12 hrs)",
+          "difficulty": "Intermediate",
+          "practiceTask": "Build a rate-limited REST auth microservice with token refresh flow in TypeScript.",
+          "miniProject": "Secure API Gateway with role-based access control",
+          "completed": true,
+          "completedAt": "2026-09-29T06:12:06.164Z"
+        },
+        {
+          "id": "task-3",
+          "week": 3,
+          "skill": "PostgreSQL Relational Mastery",
+          "title": "Complex Queries, Indexing & Prisma/Drizzle ORM",
+          "learningObjective": "Advance from basic SQL to PostgreSQL-specific features: JSONB, full-text search, composite indexes, and ORM migrations.",
+          "duration": "6 Days (9 hrs)",
+          "difficulty": "Intermediate",
+          "practiceTask": "Write optimized joins with explain analyze benchmarks on a 50,000 row sample table.",
+          "miniProject": "Analytical Ledger Database Schema with automated triggers",
+          "completed": false
+        },
+        {
+          "id": "task-4",
+          "week": 4,
+          "skill": "Full Stack Integration: React + Node.js + Postgres",
+          "title": "End-to-End Application Pipeline & REST Architecture",
+          "learningObjective": "Connect typed frontend to backend APIs with real-time feedback, optimistic updates, and clean modular code architecture.",
+          "duration": "7 Days (14 hrs)",
+          "difficulty": "Intermediate",
+          "practiceTask": "Implement TanStack Query caching with server pagination and optimistic mutation rollbacks.",
+          "miniProject": "Real-Time Job Application Tracker with Kanban drag-and-drop",
+          "completed": false
+        },
+        {
+          "id": "task-5",
+          "week": 5,
+          "skill": "Docker Containerization & Dev Environments",
+          "title": "Containerizing Multi-Service Full Stack Apps",
+          "learningObjective": "Write multi-stage Dockerfiles for React and Node.js; configure docker-compose for app, postgres, and redis containers.",
+          "duration": "5 Days (8 hrs)",
+          "difficulty": "Intermediate",
+          "practiceTask": "Containerize SplitSphere with docker-compose multi-container setup running in isolated networks.",
+          "miniProject": "1-Click Multi-Service Production Compose Bundle",
+          "completed": false
+        },
+        {
+          "id": "task-6",
+          "week": 6,
+          "skill": "AWS & Cloud Deployment Readiness",
+          "title": "Cloud Hosting, S3 Storage & CI/CD Pipelines",
+          "learningObjective": "Deploy containerized web apps to AWS ECS/App Runner with RDS PostgreSQL, S3 asset buckets, and GitHub Actions CI/CD.",
+          "duration": "7 Days (10 hrs)",
+          "difficulty": "Advanced",
+          "practiceTask": "Set up automated GitHub Actions workflow to run lint, tests, and build Docker image on push.",
+          "miniProject": "Production-ready CI/CD Pipeline with health checks",
+          "completed": false
+        }
+      ],
+      "recommendedProjects": [
+        {
+          "id": "proj-1",
+          "title": "Real-Time Job Application & Pipeline Tracker",
+          "description": "A production-grade applicant tracking dashboard featuring Kanban stages, real-time activity feeds, resume keyword matching, and automated email reminders.",
+          "skillsDeveloped": [
+            "React",
+            "TypeScript",
+            "Node.js",
+            "PostgreSQL",
+            "REST API",
+            "Docker"
+          ],
+          "difficulty": "Intermediate",
+          "estimatedDuration": "10 - 14 Days",
+          "portfolioValue": "Exceptional",
+          "keyFeatures": [
+            "Interactive drag-and-drop Kanban board for job stages (Applied, Interviewing, Offer)",
+            "Full relational database backend with PostgreSQL and indexed query search",
+            "TypeScript on both frontend and backend for strict end-to-end type safety",
+            "Docker containerized with docker-compose for 1-command local evaluation"
+          ],
+          "architectureOverview": "React 19 + TypeScript on Vite frontend; Express + TypeScript REST API; PostgreSQL database with connection pooling; Dockerized container image."
+        },
+        {
+          "id": "proj-2",
+          "title": "Cloud Native Microservice Log & Health Monitor",
+          "description": "A high-throughput distributed service monitor collecting server telemetry, latency metrics, and error traces with Redis caching.",
+          "skillsDeveloped": [
+            "Node.js",
+            "Docker",
+            "Redis",
+            "PostgreSQL",
+            "AWS"
+          ],
+          "difficulty": "Intermediate",
+          "estimatedDuration": "7 - 10 Days",
+          "portfolioValue": "High",
+          "keyFeatures": [
+            "Time-series metric storage and percentile latency aggregation",
+            "Redis cache layer reducing primary database read volume by 80%",
+            "Alerting rules engine dispatching notifications when error spikes occur"
+          ],
+          "architectureOverview": "Node.js event emitter pipeline, Redis pub/sub, PostgreSQL historical archive, React dashboard visualization."
+        },
+        {
+          "id": "proj-3",
+          "title": "Collaborative Document Workspace with Live Synced Edits",
+          "description": "Notion-style collaborative document builder with markdown parsing, live cursor sync, and revision history logs.",
+          "skillsDeveloped": [
+            "React",
+            "TypeScript",
+            "WebSocket",
+            "Node.js",
+            "Tailwind CSS"
+          ],
+          "difficulty": "Advanced",
+          "estimatedDuration": "12 - 16 Days",
+          "portfolioValue": "Exceptional",
+          "keyFeatures": [
+            "Conflict-free multi-user typing sync over WebSocket connections",
+            "Deep revision history with time-travel inspection in PostgreSQL",
+            "Dark mode command palette with instant search indexing"
+          ],
+          "architectureOverview": "React frontend, Node.js WebSocket cluster, transactional relational storage."
+        }
+      ],
+      "recommendedCertifications": [
+        {
+          "id": "cert-1",
+          "name": "AWS Certified Cloud Practitioner (CLF-C02)",
+          "issuer": "Amazon Web Services",
+          "relevance": "Directly validates AWS cloud fundamentals and architectural models required in modern Full Stack positions.",
+          "skillsCovered": [
+            "AWS",
+            "Cloud Architecture",
+            "Security & Compliance",
+            "EC2/S3/RDS"
+          ],
+          "level": "Foundational",
+          "status": "Interested",
+          "link": "https://aws.amazon.com/certification/certified-cloud-practitioner/"
+        },
+        {
+          "id": "cert-2",
+          "name": "Docker Certified Associate (DCA)",
+          "issuer": "Docker Inc.",
+          "relevance": "Proves containerization expertise, multi-stage building, and container orchestration.",
+          "skillsCovered": [
+            "Docker",
+            "Containers",
+            "Networking",
+            "Volume Management"
+          ],
+          "level": "Intermediate",
+          "status": "In Progress",
+          "link": "https://www.docker.com/community/certification/"
+        },
+        {
+          "id": "cert-3",
+          "name": "Meta Front-End & Back-End Professional Specialization",
+          "issuer": "Meta / Coursera",
+          "relevance": "Validates industry-standard React and backend API architecture, relational schemas, and CI/CD.",
+          "skillsCovered": [
+            "React",
+            "Node.js",
+            "REST API",
+            "Version Control"
+          ],
+          "level": "Professional",
+          "status": "Completed",
+          "link": "https://www.coursera.org/professional-certificates/meta-front-end-developer"
+        }
+      ],
+      "interviewQuestions": [
+        {
+          "id": "iq-1",
+          "category": "Technical",
+          "question": "What are the key architectural differences between REST APIs and WebSockets, and when would you choose each?",
+          "context": "Relevant to your target role as Full Stack Developer and your projects (REST API vs PulseVote live polling).",
+          "suggestedPoints": [
+            "REST is stateless request-response over HTTP/HTTPS, optimal for CRUD operations, caching, and idempotency.",
+            "WebSocket is a full-duplex persistent bidirectional TCP connection, optimal for real-time streaming, chat, and live collaborative states.",
+            "Mention connection overhead, scaling with load balancers, and graceful connection fallbacks."
+          ],
+          "difficulty": "Medium",
+          "answered": false
+        },
+        {
+          "id": "iq-2",
+          "category": "Technical",
+          "question": "How do you prevent SQL injection in PostgreSQL, and how do connection pools like PgBouncer or node-postgres pool improve performance?",
+          "context": "Tests PostgreSQL database depth and backend query security.",
+          "suggestedPoints": [
+            "Always utilize parameterized queries / prepared statements rather than string concatenation.",
+            "ORM layers (Prisma/Drizzle) parameterize by default, but raw queries must be guarded.",
+            "Connection pooling avoids expensive TCP handshakes and process fork overhead per HTTP request."
+          ],
+          "difficulty": "Medium",
+          "answered": false
+        },
+        {
+          "id": "iq-3",
+          "category": "Project",
+          "question": "In your \"AI Blood Demand Prediction System\", how did you handle model evaluation, latency in your FastAPI backend, and edge cases?",
+          "context": "Directly derived from your resume project.",
+          "suggestedPoints": [
+            "Detail your train-test split, metrics used (RMSE, MAE, or F1 score), and validation methodology.",
+            "Explain why FastAPI was selected: asynchronous request handling, Pydantic type validation, and low latency serialization.",
+            "Address edge cases like sudden seasonal hospital shortages or data sparsity."
+          ],
+          "difficulty": "Hard",
+          "answered": false
+        },
+        {
+          "id": "iq-4",
+          "category": "Behavioral",
+          "question": "Describe a situation where you had to quickly learn an unfamiliar technology under a tight deadline. How did you structure your learning?",
+          "context": "Evaluates adaptability regarding your skill gap learning plan (TypeScript, Docker).",
+          "suggestedPoints": [
+            "Use the STAR method (Situation, Task, Action, Result).",
+            "Highlight hands-on prototyping, documentation review, and iterative validation.",
+            "Quantify positive outcomes and demonstrate curiosity and humility."
+          ],
+          "difficulty": "Medium",
+          "answered": false
+        },
+        {
+          "id": "iq-5",
+          "category": "HR",
+          "question": "Walk me through your background and why you are targeting this Full Stack Developer position.",
+          "context": "Standard opening question tailored to your profile.",
+          "suggestedPoints": [
+            "Summarize your strong AI & Computer Science academic grounding.",
+            "Highlight your practical hands-on experience building full stack systems (React, Python/FastAPI, TypeScript transition).",
+            "Articulate genuine excitement about engineering scalable products."
+          ],
+          "difficulty": "Easy",
+          "answered": false
+        }
+      ]
+    }
+  }
+}
